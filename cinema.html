@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro Animation</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="card.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60c1adcda8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <p class="screen"></p>
+            <div class="intro">
+                    <button class="myBtn" onclick="fadeOut()">Start Here</button>
+            </div>
+        </div>
+        <div class="overlay-2"></div>
+    </div>
+    <header>
+        <div class="logo">CINEMA</div>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Info</a>
+            <a href="">Contact</a>
+            
+        </nav>
+    </header>
+
+    
+<div class="carousel">
+    <div class="list">
+        <div class="item">
+            <img src="movie poster/Alien.webp">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+            
+        </div>
+
+        <div class="item">
+            <img src="movie poster/infinitywar.jpg">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+            
+        </div>
+
+        <div class="item">
+            <img src="movie poster/infinitywar.jpg">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+            
+        </div>
+
+        <div class="item">
+            <img src="movie poster/infinitywar.jpg">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+           
+        </div>
+
+        <div class="item">
+            <img src="movie poster/infinitywar.jpg">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+           
+        </div>
+
+        <div class="item">
+            <img src="movie poster/infinitywar.jpg">
+            <div class="introduce">
+                <div class="title">Now Showing!</div>
+                <div class="topic">Movie</div>
+                <div class="des">
+                    <!-- 20 lorem -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                </div>
+                <button class="seeMore">SEE MORE &#8599</button>
+            </div>
+        </div>
+    </div>
+    <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+        <button id="back">BACK  &#8599</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container">
+
+	
+	<div class="movie-card">
+		<div class="movie-header manOfSteel">
+			<div class="header-icon-container">
+				<a href="#">
+					<i class="material-icons header-icon">&#xE037;</i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Man of Steel</h3>
+				</a>
+				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Date &amp; Time</label>
+					<span>Sun 8 Sept - 10:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Screen</label>
+					<span>03</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Row</label>
+					<span>F</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Seat</label>
+					<span>21,22</span>
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header babyDriver">
+			<div class="header-icon-container">
+				<a href="#">
+					<i class="material-icons header-icon">&#xE037;</i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="">
+					<h3 class="movie-title">Baby Driver</h3>
+				</a>
+				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Date &amp; Time</label>
+					<span>Tue 4 July - 05:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Screen</label>
+					<span>01</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Row</label>
+					<span>H</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Seat</label>
+					<span>15</span>
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header theDarkTower">
+			<div class="header-icon-container">
+				<a href="#">
+					<i class="material-icons header-icon">&#xE037;</i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">The Dark Tower</h3>
+				</a>
+				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;">
+                    <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                </i></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Date &amp; Time</label>
+					<span>Wed 16 Aug - 07:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Screen</label>
+					<span>06</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Row</label>
+					<span>C</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Seat</label>
+					<span>18</span>
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+	</div><!--movie-card-->
+	
+	<div class="movie-card">
+		<div class="movie-header bladeRunner2049">
+			<div class="header-icon-container">
+				<a href="#">
+					<i class="material-icons header-icon">&#xE037;</i>
+				</a>
+			</div>
+		</div><!--movie-header-->
+		<div class="movie-content">
+			<div class="movie-content-header">
+				<a href="#">
+					<h3 class="movie-title">Blade Runner 2049</h3>
+				</a>
+				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                    <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
+			</div>
+			<div class="movie-info">
+				<div class="info-section">
+					<label>Date &amp; Time</label>
+					<span>Mon 16 Oct - 10:00PM</span>
+				</div><!--date,time-->
+				<div class="info-section">
+					<label>Screen</label>
+					<span>06</span>
+				</div><!--screen-->
+				<div class="info-section">
+					<label>Row</label>
+					<span>D</span>
+				</div><!--row-->
+				<div class="info-section">
+					<label>Seat</label>
+					<span>05,06</span>
+				</div><!--seat-->
+			</div>
+		</div><!--movie-content-->
+
+
+
+
+
+
+
+
+
+<Script src="scrollanimation.js"></Script> 
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+/*DROP DOWN ANIMATION FADE OUT___________________________________________ */
+
+body.no-scroll {
+    overflow: hidden; /* Prevent scrolling */
+}
+.overlay-2 {
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000000;
+}
+
+.overlay {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('movie poster/seats.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.overlay p {
+    font-size: 300px;
+    font-weight: 800;
+}
+
+.screen {
+    color: #323232;
+    font-family: Poppins, sans-serif;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.myBtn {
+    font-family: Poppins, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 24px 48px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: #ffffff;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    outline: none;
+    background: none;
+    z-index: 1;
+    transition: 0.8s ease-out;
+}
+
+.myBtn:hover {
+    color: #101010;
+}
+
+.myBtn:before {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.8s ease-out;
+}
+
+.myBtn:hover:before {
+    top: 0;
+}
+
+/*NAVIGATION BAR ___________________________________________ */
+
+header{
+    width: 1140px;
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 50px;
+    align-items: center;
+    color: #ffffff;
+}
+header .logo{
+    font-weight: bold;
+    
+}
+header nav a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
