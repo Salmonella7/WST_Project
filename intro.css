@@ -84,6 +84,7 @@ header {
     width: 1140px;
     max-width: 90%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: auto;
     height: 50px;
@@ -99,10 +100,76 @@ header nav a {
     margin-left: 30px;
     text-decoration: none;
     color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s ease-in; /* Add transition for color */
+    font-weight: bold;
+}
+.border-top {
+    border-top: 2px solid #ffffff; /* Change the width, style, and color as needed */
+    width: 80%;
+    margin: 0 auto; /* Centers the element horizontally */
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
-header nav a:hover {
-    color: #ffcc00; /* Change to your desired hover color */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto; /* Centers the element horizontally */
+    margin-top: 15px;
+}
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.search-bar input[type="text"]:focus {
+    outline: none;
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.search-bar button {
+    padding: 10px 15px;
+    border-color: #ffffff;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-bar button {
+    transition: background 0.3s, transform 0.3s;
+}
+.search-bar button:hover {
+    background: rgba(255, 255, 255, 0.2); 
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 767px) {
+    .search-bar {
+        width: 100%; 
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+    
+    .search-bar input[type="text"] {
+        flex: 1; 
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+    
+    .search-bar button {
+        width: auto;
+        flex-shrink: 0;
+        margin-right: 40px;
+        transition: background 0.3s, transform 0.3s;
+    }
+
+    .search-bar button:hover {
+        background: rgba(255, 255, 255, 0.2); 
+        transform: scale(1.1); 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
 }

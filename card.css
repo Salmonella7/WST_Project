@@ -40,12 +40,7 @@ a:hover {
     border-radius: 10px;
     display: inline-block;
     overflow: hidden;
-    opacity: 0; /* Initially invisible */
-    transition: opacity 0.5s; /* Fade in effect */
-}
-
-.movie-card.visible {
-    opacity: 1; /* Make visible */
+    
 }
 
 .movie-header {
@@ -54,22 +49,76 @@ a:hover {
     display: block;
 }
 
-/* Hover effects */
+.header-icon-container {
+    position: relative;
+}
+
 .movie-card:hover {
     transform: scale(1.03);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, .08);
-    border-color: rgba(0, 0, 0, 0.8); /* Change border color to black on hover */
+    border-color: rgba(0, 0, 0, 0.8); /* Change border color to white on hover */
+    box-shadow: 0 0 15px rgba(156, 156, 156, 0.5), 0 0 25px rgba(177, 177, 177, 0.5); /* Add glow effect */
 }
 
-/* Movie headers with background images */
-.movie-header.manofSteel { background: url("https://i.pinimg.com/564x/a6/a7/54/a6a754e59cae474f16ceb121694a8977.jpg") no-repeat center; background-size: cover; }
-.movie-header.babyDriver { background: url("https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg") no-repeat center; background-size: cover; }
-.movie-header.theDarkTower { background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg") no-repeat center; background-size: cover; }
-.movie-header.bladeRunner2049 { background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg") no-repeat center; background-size: cover; }
-.movie-header.pacificRim { background: url("https://pics.filmaffinity.com/Pacific_Rim-746230547-large.jpg") no-repeat center; background-size: cover; }
-.movie-header.godzilla { background: url("https://assets.mycast.io/posters/godzilla-american-version-of-godzilla-minus-one-fan-casting-poster-480240-large.jpg?1718945405") no-repeat center; background-size: cover; }
-.movie-header.TASM { background: url("https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1500x1500/products/86363/85921/the_amazing_spider-man_original_movie_poster_buy_now_at_starstills__71037__38028.1394515196.jpg?c=2") no-repeat center; background-size: cover; }
-.movie-header.greenknight { background: url("https://i.ebayimg.com/images/g/HVoAAOSw2llipMUB/s-l1200.jpg") no-repeat center; background-size: cover; }
+.movie-content {
+    padding: 18px;
+}
+
+.movie-content-header, .movie-info {
+    display: table;
+    width: 100%;
+}
+
+.movie-title {
+    font-size: 24px;
+    margin: 0;
+    display: table-cell;
+}
+
+
+
+.movie-header.manofSteel {
+    background: url("https://i.pinimg.com/564x/a6/a7/54/a6a754e59cae474f16ceb121694a8977.jpg");
+    background-size: cover;
+}
+
+.movie-header.babyDriver {
+    background: url("https://m.media-amazon.com/images/M/MV5BMjM3MjQ1MzkxNl5BMl5BanBnXkFtZTgwODk1ODgyMjI@._V1_SY1000_CR0,0,674,1000_AL_.jpg");
+    background-size: cover;
+}
+
+.movie-header.theDarkTower {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+.movie-header.bladeRunner2049 {
+    background: url("http://cdn.collider.com/wp-content/uploads/2017/05/blade-runner-2049-poster-ryan-gosling.jpeg");
+    background-size: cover;
+    background-position: 100% 80%;
+}
+.movie-header.pacificRim {
+    background: url("https://pics.filmaffinity.com/Pacific_Rim-746230547-large.jpg");
+    background-size: cover;
+    background-position: 100% 80%;
+}
+.movie-header.godzilla {
+    background: url("https://assets.mycast.io/posters/godzilla-american-version-of-godzilla-minus-one-fan-casting-poster-480240-large.jpg?1718945405");
+    background-size: cover;
+    background-position: 100% 80%;
+}
+.movie-header.TASM {
+    background: url("https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/1500x1500/products/86363/85921/the_amazing_spider-man_original_movie_poster_buy_now_at_starstills__71037__38028.1394515196.jpg?c=2");
+    background-size: cover;
+    background-position: 100% 80%;
+}
+.movie-header.greenknight {
+    background: url("https://i.ebayimg.com/images/g/HVoAAOSw2llipMUB/s-l1200.jpg");
+    background-size: cover;
+    background-position: 100% 80%;
+}
+
 
 .imax-logo {
     width: 25px;
@@ -91,8 +140,13 @@ a:hover {
     text-align: center;
 }
 
-.info-section:first-of-type { text-align: left; }
-.info-section:last-of-type { text-align: right; }
+.info-section:first-of-type {
+    text-align: left;
+}
+
+.info-section:last-of-type {
+    text-align: right;
+}
 
 .info-section label {
     display: block;
@@ -106,42 +160,37 @@ a:hover {
     font-size: 11px;
 }
 
-/* Slide animations */
-@keyframes autoslideleft {
-    from { transform: translateX(-300px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); /* Start position */
+    transition: opacity 300ms ease-in, transform 300ms ease-in;
 }
 
-@keyframes autoslideright {
-    from { transform: translateX(300px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* End position */
 }
 
-.autoleft {
-    animation: autoslideleft 0.5s forwards;
-}
 
-.autoright {
-    animation: autoslideright 0.5s forwards;
-}
 
-/* Media queries for responsive design */
-@media screen and (max-width: 767px) {
+
+
+
+
+
+
+@media screen and (max-width: 767) {
     .movie-card {
         width: auto;
         margin: 1em;
         height: auto;
     }
-
+    
     .container {
         padding: 0;
         margin: 0;
     }
 }
-
-
-
-
 
 
 

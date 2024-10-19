@@ -426,7 +426,7 @@ body{
 
 
 
-
+/* Carousel */
 
 @media screen and (max-width: 767px){
     /* mobile */
@@ -451,5 +451,48 @@ body{
     .carousel .list .item:nth-child(2) .introduce .des{
         height: 100px;
         overflow: auto;
+    }
+
+/* MODAL */
+
+    .modal-content {
+        padding: 10px; /* Reduced padding for mobile */
+        width: 80%; /* Use 90% of the screen width */
+        max-width: 100%; /* Ensure it doesn't exceed screen size */
+    }
+
+    .modal-img {
+        width: 50%; /* Make the image responsive */
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 10px; /* Add space below the image */
+    }
+
+    .modal-info {
+        padding-left: 0; /* Remove left padding */
+        align-items: center; /* Center items on small screens */
+    }
+
+    .modal-title {
+        font-size: 12px; /* Adjust font size for mobile */
+    }
+
+    .modal-topic {
+        font-size: 8px; /* Adjust font size for mobile */
+    }
+
+    .modal-des {
+        font-size: 8px; /* Adjust font size for mobile */
+    }
+
+    .buy-tickets {
+        width: 50%; /* Full width button */
+        padding: 15px; /* More padding for touch targets */
+        font-size: 18px; /* Slightly larger font for readability */
+    }
+
+    .close {
+        top: 10px; /* Adjust close button position */
+        right: 10px; /* Adjust close button position */
+        font-size: 20px; /* Slightly smaller close button */
     }
 }
