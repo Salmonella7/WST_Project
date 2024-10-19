@@ -80,7 +80,7 @@ body.no-scroll {
 
 /*NAVIGATION BAR ___________________________________________ */
 
-header{
+header {
     width: 1140px;
     max-width: 90%;
     display: flex;
@@ -90,13 +90,19 @@ header{
     align-items: center;
     color: #ffffff;
 }
-header .logo{
+
+header .logo {
     font-weight: bold;
-    
 }
-header nav a{
+
+header nav a {
     margin-left: 30px;
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
+    transition: color 0.3s ease-in; /* Add transition for color */
+}
+
+header nav a:hover {
+    color: #ffcc00; /* Change to your desired hover color */
 }

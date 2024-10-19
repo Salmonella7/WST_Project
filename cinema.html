@@ -15,6 +15,7 @@
 	<Title>Cinephoria Seat Reservation</Title>
 </head>
 <body>
+<!--
     <div class="container">
         <div class="overlay">
             <p class="screen"></p>
@@ -24,12 +25,15 @@
         </div>
         <div class="overlay-2"></div>
     </div>
+
+-->
+
     <header>
         <div class="logo">CINEMA</div>
         <nav>
             <a href="">Home</a>
-            <a href="">Info</a>
-            <a href="">Contact</a>
+            <a href="">Movies</a>
+            <a href="">Cinemas</a>
             
         </nav>
     </header>
@@ -58,7 +62,7 @@
                 <div class="topic">Bad Boys<br>Ride or Die</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    The third installment in the Bad Boys franchise follows detectives Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence) as they reunite for one last ride. With high-octane action, hilarious banter, and a new threat from the past, the duo must take on dangerous criminals while dealing with their own aging careers.
+                    The third installment in the Bad Boys franchise follows detectives Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence) as they reunite for one last ride.<br> With high-octane action, hilarious banter, and a new threat from the past, the duo must take on dangerous criminals while dealing with their own aging careers.
                 </div>
                 <button class="seeMore">SEE MORE &#8599</button>
             </div>
@@ -72,7 +76,7 @@
                 <div class="topic">As Above<br>so Below</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    This found-footage horror film follows a team of explorers who venture into the catacombs beneath Paris in search of a legendary alchemical treasure. As they delve deeper into the labyrinth, they confront terrifying supernatural forces and their own darkest secrets.
+                    This found-footage horror film follows a team of explorers who venture into the catacombs beneath Paris in search of a legendary alchemical treasure.<br> As they delve deeper into the labyrinth, they confront terrifying supernatural forces and their own darkest secrets.
                 </div>
                 <button class="seeMore">SEE MORE &#8599</button>
             </div>
@@ -86,7 +90,7 @@
                 <div class="topic">Deadpool & Wolverine</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    In this anticipated crossover, Deadpool (Ryan Reynolds) and Wolverine (Hugh Jackman) team up for an action-packed, irreverent adventure. Combining Deadpool's trademark humor and Wolverine's iconic claws, the film promises explosive battles, witty banter, and an exciting blend of superhero chaos.
+                    In this anticipated crossover, Deadpool (Ryan Reynolds) and Wolverine (Hugh Jackman) team up for an action-packed, irreverent adventure.<br> Combining Deadpool's trademark humor and Wolverine's iconic claws, the film promises explosive battles, witty banter, and an exciting blend of superhero chaos.
                 </div>
                 <button class="seeMore">SEE MORE &#8599</button>
             </div>
@@ -114,7 +118,7 @@
                 <div class="topic">Oppenheimer</div>
                 <div class="des">
                     <!-- 20 lorem -->
-                    This biographical drama follows the life of J. Robert Oppenheimer, the brilliant physicist who led the Manhattan Project, which developed the atomic bomb during World War II. The film explores the moral dilemmas, personal struggles, and the profound impact Oppenheimer's creation had on history and his own life.
+                    This biographical drama follows the life of J. Robert Oppenheimer, the brilliant physicist who led the Manhattan Project, which developed the atomic bomb during World War II.<br> The film explores the moral dilemmas, personal struggles, and the profound impact Oppenheimer's creation had on history and his own life.
                 </div>
                 <button class="seeMore">SEE MORE &#8599</button>
             </div>
@@ -123,173 +127,274 @@
     <div class="arrows">
         <button id="prev"><</button>
         <button id="next">></button>
-        <button id="back">BACK  &#8599</button>
     </div>
 </div>
 
+<div class="search-bar">
+    <input class="slidedown" type="text" placeholder="..." aria-label="Search">
+    <button type="submit">Search</button>
+</div>
 
-
-
-
-
+<div class="border-top"></div>
 
 
 <div class="container">
+    <div class="movie-card autoleft">
+        <a href="">
+            <div class="movie-header manofSteel"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">Man Of Steel</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Sun 8 Sept - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>03</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>F</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>21,22</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
+    
+    <div class="movie-card autoleft">
+        <a href="">
+            <div class="movie-header babyDriver"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">Baby Driver</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Tue 4 July - 05:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>01</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>H</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>15</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 
+    <div class="movie-card autoleft">
+        <a href="">
+            <div class="movie-header pacificRim"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">Pacific Rim</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Mon 16 Oct - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>D</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>05,06</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 	
-	<div class="movie-card">
-		<div class="movie-header manOfSteel">
-			<div class="header-icon-container">
-				<a href="#">
-					<i class="material-icons header-icon">&#xE037;</i>
-				</a>
-			</div>
-		</div><!--movie-header-->
-		<div class="movie-content">
-			<div class="movie-content-header">
-				<a href="#">
-					<h3 class="movie-title">Man of Steel</h3>
-				</a>
-				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
-                <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
-			</div>
-			<div class="movie-info">
-				<div class="info-section">
-					<label>Date &amp; Time</label>
-					<span>Sun 8 Sept - 10:00PM</span>
-				</div><!--date,time-->
-				<div class="info-section">
-					<label>Screen</label>
-					<span>03</span>
-				</div><!--screen-->
-				<div class="info-section">
-					<label>Row</label>
-					<span>F</span>
-				</div><!--row-->
-				<div class="info-section">
-					<label>Seat</label>
-					<span>21,22</span>
-				</div><!--seat-->
-			</div>
-		</div><!--movie-content-->
-	</div><!--movie-card-->
-	
-	<div class="movie-card">
-		<div class="movie-header babyDriver">
-			<div class="header-icon-container">
-				<a href="#">
-					<i class="material-icons header-icon">&#xE037;</i>
-				</a>
-			</div>
-		</div><!--movie-header-->
-		<div class="movie-content">
-			<div class="movie-content-header">
-				<a href="">
-					<h3 class="movie-title">Baby Driver</h3>
-				</a>
-				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
-                    <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
-			</div>
-			<div class="movie-info">
-				<div class="info-section">
-					<label>Date &amp; Time</label>
-					<span>Tue 4 July - 05:00PM</span>
-				</div><!--date,time-->
-				<div class="info-section">
-					<label>Screen</label>
-					<span>01</span>
-				</div><!--screen-->
-				<div class="info-section">
-					<label>Row</label>
-					<span>H</span>
-				</div><!--row-->
-				<div class="info-section">
-					<label>Seat</label>
-					<span>15</span>
-				</div><!--seat-->
-			</div>
-		</div><!--movie-content-->
-	</div><!--movie-card-->
-	
-	<div class="movie-card">
-		<div class="movie-header theDarkTower">
-			<div class="header-icon-container">
-				<a href="#">
-					<i class="material-icons header-icon">&#xE037;</i>
-				</a>
-			</div>
-		</div><!--movie-header-->
-		<div class="movie-content">
-			<div class="movie-content-header">
-				<a href="#">
-					<h3 class="movie-title">The Dark Tower</h3>
-				</a>
-				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;">
-                    <i class="fa-regular fa-eye" style="color: #000000;"></i>
-                </i></div>
-			</div>
-			<div class="movie-info">
-				<div class="info-section">
-					<label>Date &amp; Time</label>
-					<span>Wed 16 Aug - 07:00PM</span>
-				</div><!--date,time-->
-				<div class="info-section">
-					<label>Screen</label>
-					<span>06</span>
-				</div><!--screen-->
-				<div class="info-section">
-					<label>Row</label>
-					<span>C</span>
-				</div><!--row-->
-				<div class="info-section">
-					<label>Seat</label>
-					<span>18</span>
-				</div><!--seat-->
-			</div>
-		</div><!--movie-content-->
-	</div><!--movie-card-->
-	
-	<div class="movie-card">
-		<div class="movie-header bladeRunner2049">
-			<div class="header-icon-container">
-				<a href="#">
-					<i class="material-icons header-icon">&#xE037;</i>
-				</a>
-			</div>
-		</div><!--movie-header-->
-		<div class="movie-content">
-			<div class="movie-content-header">
-				<a href="#">
-					<h3 class="movie-title">Blade Runner 2049</h3>
-				</a>
-				<div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
-                    <i class="fa-regular fa-eye" style="color: #000000;"></i></div>
-			</div>
-			<div class="movie-info">
-				<div class="info-section">
-					<label>Date &amp; Time</label>
-					<span>Mon 16 Oct - 10:00PM</span>
-				</div><!--date,time-->
-				<div class="info-section">
-					<label>Screen</label>
-					<span>06</span>
-				</div><!--screen-->
-				<div class="info-section">
-					<label>Row</label>
-					<span>D</span>
-				</div><!--row-->
-				<div class="info-section">
-					<label>Seat</label>
-					<span>05,06</span>
-				</div><!--seat-->
-			</div>
-		</div><!--movie-content-->
+	<div class="movie-card autoleft">
+        <a href="">
+            <div class="movie-header godzilla"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">Godzilla</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Mon 16 Oct - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>D</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>05,06</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 
+    <div class="movie-card autoright">
+        <a href="">
+            <div class="movie-header theDarkTower"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">The Dark Tower</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Wed 16 Aug - 07:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>C</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>18</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 
+    <div class="movie-card autoright">
+        <a href="">
+            <div class="movie-header bladeRunner2049"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">Blade Runner 2049</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Mon 16 Oct - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>D</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>05,06</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 
+    <div class="movie-card autoright">
+        <a href="">
+            <div class="movie-header TASM"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">The Amazing Spider-Man</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Mon 16 Oct - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>D</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>05,06</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
 
-
-
+    <div class="movie-card autoright">
+        <a href="">
+            <div class="movie-header greenknight"></div><!--movie-header-->
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <h3 class="movie-title">The Green Knight</h3>
+                    <div class="imax-logo"><i class="fa-solid fa-film fa-flip-both" style="color: #FFD43B;"></i>
+                        <i class="fa-regular fa-eye" style="color: #000000;"></i>
+                    </div>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <label>Date &amp; Time</label>
+                        <span>Mon 16 Oct - 10:00PM</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Screen</label>
+                        <span>06</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Row</label>
+                        <span>D</span>
+                    </div>
+                    <div class="info-section">
+                        <label>Seat</label>
+                        <span>05,06</span>
+                    </div>
+                </div>
+            </div><!--movie-content-->
+        </a>
+    </div><!--movie-card-->
+</div><!--container-->
 
 
 
