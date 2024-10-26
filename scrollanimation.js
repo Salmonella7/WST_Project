@@ -57,41 +57,120 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // CAROUSEL 
+document.addEventListener("DOMContentLoaded", function() {
+    const carousel = document.querySelector('.carousel');
 
-let nextButton = document.getElementById('next');
-let prevButton = document.getElementById('prev');
-let carousel = document.querySelector('.carousel');
-let listHTML = document.querySelector('.carousel .list');
+    // Function to check for showDetail class and handle video playback
+    function checkShowDetail() {
+        const activeItem = carousel.querySelector('.item:nth-child(2)'); // Adjust this if needed
+        const video = activeItem.querySelector('video');
 
-// Carousel navigation
-nextButton.onclick = function() {
-    showSlider('next');
-};
-prevButton.onclick = function() {
-    showSlider('prev');
-};
-
-let unAcceptedClick;
-const showSlider = (type) => {
-    nextButton.style.pointerEvents = 'none';
-    prevButton.style.pointerEvents = 'none';
-
-    carousel.classList.remove('next', 'prev');
-    let items = document.querySelectorAll('.carousel .list .item');
-    if (type === 'next') {
-        listHTML.appendChild(items[0]);
-        carousel.classList.add('next');
-    } else {
-        listHTML.prepend(items[items.length - 1]);
-        carousel.classList.add('prev');
+        if (carousel.classList.contains('showDetail')) {
+            if (video) {
+                video.play(); // Play the video if it exists
+            }
+        } else {
+            if (video) {
+                video.pause(); // Pause the video if it exists
+                video.currentTime = 0; // Reset video to the beginning
+            }
+        }
     }
-    clearTimeout(unAcceptedClick);
-    unAcceptedClick = setTimeout(() => {
-        nextButton.style.pointerEvents = 'auto';
-        prevButton.style.pointerEvents = 'auto';
-    }, 2000);
-};
 
+    // Function to handle visibility of items
+    function handleVisibility() {
+        const items = carousel.querySelectorAll('.item');
+        items.forEach((item, index) => {
+            const video = item.querySelector('video');
+            if (item === activeItem) {
+                if (carousel.classList.contains('showDetail')) {
+                    if (video) {
+                        video.play(); // Play the active video
+                    }
+                }
+            } else {
+                if (video) {
+                    video.pause(); // Pause non-active videos
+                    video.currentTime = 0; // Reset non-active videos
+                }
+            }
+        });
+    }
+
+    // Initial check
+    checkShowDetail();
+
+    // Observe changes to the class
+    const observer = new MutationObserver(() => {
+        checkShowDetail();
+        handleVisibility(); // Check video visibility when class changes
+    });
+
+    observer.observe(carousel, { attributes: true });
+
+    // Carousel controls
+    let nextButton = document.getElementById('next');
+    let prevButton = document.getElementById('prev');
+    let listHTML = document.querySelector('.carousel .list');
+    let seeMoreButtons = document.querySelectorAll('.seeMore');
+    let backButton = document.getElementById('back');
+
+    nextButton.onclick = function() {
+        showSlider('next');
+    };
+    prevButton.onclick = function() {
+        showSlider('prev');
+    };
+
+    let unAcceptClick;
+    const showSlider = (type) => {
+        nextButton.style.pointerEvents = 'none';
+        prevButton.style.pointerEvents = 'none';
+
+        carousel.classList.remove('next', 'prev');
+        let items = document.querySelectorAll('.carousel .list .item'); 
+        if (type === 'next') {
+            listHTML.appendChild(items[0]);
+            carousel.classList.add('next');
+        } else {
+            listHTML.prepend(items[items.length - 1]);
+            carousel.classList.add('prev');
+        }
+        clearTimeout(unAcceptClick);
+        unAcceptClick = setTimeout(() => {
+            nextButton.style.pointerEvents = 'auto';
+            prevButton.style.pointerEvents = 'auto';
+        }, 2000);
+    };
+
+    seeMoreButtons.forEach((button) => {
+        button.onclick = function() {
+            carousel.classList.remove('next', 'prev');
+            carousel.classList.add('showDetail'); // Show detail and play video
+            checkShowDetail(); // Ensure the video plays when showDetail is added
+        };
+    });
+
+    backButton.onclick = function() {
+        carousel.classList.remove('showDetail');
+        checkShowDetail(); // Ensure the video pauses when going back
+    };
+});
+
+
+// NOW SHOWING | COMING SOON TOGGLE
+function toggleSections(section) {
+    const nowShowingContainer = document.querySelector('.NOW-SHOWING-CONTAINER');
+    const comingSoonContainer = document.querySelector('.COMING-SOON-CONTAINER');
+
+    if (section === 'nowShowing') {
+        nowShowingContainer.classList.remove('hidden');
+        comingSoonContainer.classList.add('hidden');
+    } else if (section === 'comingSoon') {
+        nowShowingContainer.classList.add('hidden');
+        comingSoonContainer.classList.remove('hidden');
+    }
+}
 
 
 
