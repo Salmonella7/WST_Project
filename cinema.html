@@ -7,14 +7,17 @@
     <title>Intro Animation</title>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
-	<link rel="stylesheet" href="Essentials.css">
+    <link rel="stylesheet" href="Essentials.css">
     <link rel="stylesheet" href="carousel.css">
-	<link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="card.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,700,700i,800,800i,900,900i" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60c1adcda8.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 <body>
 
+    
     <div class="container">
         <div class="overlay">
             <p class="screen"></p>
@@ -26,433 +29,473 @@
     </div>
 
 
-	<header>
-		<a class="logo" href="">CINEPHORIA</a>
-		<nav>
-			<a href="">Home</a>
-			<a href="">Movies</a>
-			<a href="">Cinemas</a>
-		</nav>
-	</header>
-		
-		
-	<div class="carousel">
-		<div class="list">			
-			<div class="item">
-				<video id="detailVideo" src="Alien.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>			
-				<div class="poster">
-					<div class="movietitle">ALIEN</div>
-					<div class="subtitle">ROMULUS</div>
-					<p class="background"></p>
-					<div class="hoverposter"><img src="movie poster/romulus.png"></div>
-				</div>
-	
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">Alien Romulus</div>
-					<div class="des">
-						is an intense sci-fi horror film set in the Alien universe, delving into the dark depths of corporate greed and the horrors of alien life.
-					</div>
-					<button class="seeMore">PREVIEW &#8599</button>
-				</div>
-				<div class="detail">
-					
-					<div class="title">Alien</div>
-					<div class="des">
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-			
-			<div class="item">
-				<video id="detailVideo" src="Green.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>
-				<div class="poster">
-					<div class="hoverposter2"><img src="movie poster/knight.png"></div>
-					<div class="zillabg"><img src="movie poster/bgknight.png"></div>
-				</div>
-	
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">THE GREEN KNIGHT</div>
-					<div class="des">
-						The third installment in the Bad Boys franchise follows detectives Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence) as they reunite for one last ride.<br> With high-octane action, hilarious banter, and a new threat from the past, the duo must take on dangerous criminals while dealing with their own aging careers.
-					</div>
-					<button class="seeMore">PREVIEW &#8599</button>
-				</div>
-				<div class="detail">
-					<div class="title">THE GREEN KNIGHT</div>
-					<div class="des">
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-	
-			<div class="item">
-				<video id="detailVideo" src="below.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>
-				<div class="poster">
-					<div class="movietitle3">AS ABOVE</div>
-					<div class="movietitle3-2">SO BELOW</div>
-					<div class="hoverposter3"><img src="movie poster/below.jpeg"></div>
-					<div class="skull"><img src="movie poster/skulls.png"></div>
-				</div>
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">As Above  so Below</div>
-					<div class="des">
-						This found-footage horror film follows a team of explorers who venture into the catacombs beneath Paris in search of a legendary alchemical treasure.<br> As they delve deeper into the labyrinth, they confront terrifying supernatural forces and their own darkest secrets.
-					</div>
-					<button class="seeMore">PREVIEW &#8599</button>
-				</div>
-				<div class="detail">
-					
-					<div class="title">Alien</div>
-					<div class="des">
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-	
-			<div class="item">
-				<video id="detailVideo" src="Green.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>
-				<div class="poster">
-					<p class="background4"></p>
-					<div class="hoverposter4"><img src="movie poster/deadpool.png"></div>
-					<div class="dead"><img src="movie poster/wolverine.jpg"></div>
-					<div class="bullet"><img src="movie poster/bullet.png"></div>
-				</div>
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">Deadpool & Wolverine</div>
-					<div class="des">
-						<!-- 20 lorem -->
-						In this anticipated crossover, Deadpool (Ryan Reynolds) and Wolverine (Hugh Jackman) team up for an action-packed, irreverent adventure.<br> Combining Deadpool's trademark humor and Wolverine's iconic claws, the film promises explosive battles, witty banter, and an exciting blend of superhero chaos.
-					</div>
-					<button class="seeMore">PREVIEW &#8599</button>
-				</div>
-				<div class="detail">
-					
-					<div class="title">Alien</div>
-					<div class="des">
-						<!-- lorem 50 -->
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-	
-			<div class="item">
-				<video id="detailVideo" src="batman.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>
-				<div class="poster">
-					<p class="background5"></p>
-					<div class="hoverposter5"><img src="movie poster/batman.png"></div>
-					<div class="dead2"><img src="movie poster/batbackground.jpg"></div>
-					<div class="batarang2"><img src="movie poster/batarang.png"></div>
-					<div class="batarang3"><img src="movie poster/batarang.png"></div>
-				</div>
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">THE BATMAN</div>
-					<div class="des">
-						<!-- 20 lorem -->
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
-					</div>
-					<button class="seeMore">PREVIEW &#8599</button>
-				</div>
-				<div class="detail">
-					
-					<div class="title">Alien</div>
-					<div class="des">
-						<!-- lorem 50 -->
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-	
-			<div class="item">
-				<video id="detailVideo" src="halloweenends.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
-				</video>	
-				<div class="poster">
-					<div class="hoverposter6"><img src="movie poster/myers.png"></div>
-					<div class="zillabg"><img src="movie poster/halloween.jpg"></div>
-				</div>
-				<div class="introduce">
-					<div class="title">Top Movies This Week!</div>
-					<div class="topic">Halloween</div>
-					<div class="des">
-						This biographical drama follows the life of J. Robert Oppenheimer, the brilliant physicist who led the Manhattan Project, which developed the atomic bomb during World War II.<br> The film explores the moral dilemmas, personal struggles, and the profound impact Oppenheimer's creation had on history and his own life.
-					</div>
-					<button class="seeMore">SEE MORE &#8599</button>
-				</div>
-				<div class="detail">
-					
-					<div class="title">Alien</div>
-					<div class="des">
-						Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
-					</div>
-					<div class="specifications">
-						<div>
-							<p>Movie Duration</p>
-							<p>1hr 59mins</p>
-						</div>
-						<div>
-							<p>Rated</p>
-							<p>R-18</p>
-						</div>
-						<div>
-							<p>Director</p>
-							<p>Fede Álvarez</p>
-						</div>
-						<div>
-							<p>Rating</p>
-							<p>7.3/10</p>
-						</div>
-					</div>
-					<div class="checkout">
-						<button>BUY TICKET</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="arrows">
-			<button id="prev"><</button>
-			<button id="next">></button>
-			<button id="back">BACK  &#8599</button>
-		</div>
-	</div>
-	
-	<!--_________________________________________________________________________-->
-	<div class="border-top"></div>
-	<!--_________________________________________________________________________-->
-	
-	<div class="NowShowing-ComingSoon">
-		<span class="NowShowing" onclick="toggleSections('nowShowing')">Now Showing</span>
-		<span>|</span>
-		<span class="ComingSoon" onclick="toggleSections('comingSoon')">Coming Soon</span>
-	</div> <!--NOW SHOWING|COMING SOON-->
-	
-	<div class="NOW-SHOWING-CONTAINER">
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header manofSteel"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header godzilla"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header pacificrim"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header joker"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header transformers"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header venom"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header spiderman"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header quietplace"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header logan"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header finaldestination"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		
-			
-	</div> <!-- movie-container -->
-	
-	<div class="COMING-SOON-CONTAINER hidden">
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header years"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header neworder"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header agatha"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header kraven"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header doom"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header minecraft"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header f1"></div>
-		</a>
-		</div> <!--MOVIE-CARD-->
-		<div class="movie-card">
-			<a href="">
-			<div class="movie-header supermanmovie"></div>
-		</a>
-		
-	
-	</div> <!-- movie-container -->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<Script src="scrollanimation.js"></Script> 
-	</body>
-	</html>
+
+    <header>
+        <a class="logo" href="">CINEPHORIA</a>
+        <nav>
+            <a href="">Home</a>
+            <a href="">Movies</a>
+            <a href="">Cinemas</a>
+        </nav>
+    </header>
+        
+        
+    <div class="carousel">
+        <div class="list">          
+            <div class="item">
+                <video id="detailVideo" src="/Assets/Images/Alien.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>            
+                <div class="poster">
+                    <div class="movietitle">ALIEN</div>
+                    <div class="subtitle">ROMULUS</div>
+                    <p class="background"></p>
+                    <div class="hoverposter"><img src="/Assets/Images/Alien.webp"></div>
+                </div>
+    
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">Alien Romulus</div>
+                    <div class="des">
+                        is an intense sci-fi horror film set in the Alien universe, delving into the dark depths of corporate greed and the horrors of alien life.
+                    </div>
+                    <button class="seeMore">PREVIEW &#8599</button>
+                </div>
+                <div class="detail">
+                    
+                    <div class="title">Alien</div>
+                    <div class="des">
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <video id="detailVideo" src="/Assets/Images/Green.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>
+                <div class="poster">
+                    <div class="hoverposter2"><img src="/Assets/Images/knight.png"></div>
+                    <div class="zillabg"><img src="/Assets/Images/skullknight.jpg"></div>
+                </div>
+    
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">THE GREEN KNIGHT</div>
+                    <div class="des">
+                        The third installment in the Bad Boys franchise follows detectives Mike Lowrey (Will Smith) and Marcus Burnett (Martin Lawrence) as they reunite for one last ride.<br> With high-octane action, hilarious banter, and a new threat from the past, the duo must take on dangerous criminals while dealing with their own aging careers.
+                    </div>
+                    <button class="seeMore">PREVIEW &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title">THE GREEN KNIGHT</div>
+                    <div class="des">
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <video id="detailVideo" src="/Assets/Images/below.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>
+                <div class="poster">
+                    <div class="movietitle3">AS ABOVE</div>
+                    <div class="movietitle3-2">SO BELOW</div>
+                    <div class="hoverposter3"><img src="/Assets/Images/below.jpeg"></div>
+                    <div class="skull"><img src="/Assets/Images/skulls.png"></div>
+                </div>
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">As Above  so Below</div>
+                    <div class="des">
+                        This found-footage horror film follows a team of explorers who venture into the catacombs beneath Paris in search of a legendary alchemical treasure.<br> As they delve deeper into the labyrinth, they confront terrifying supernatural forces and their own darkest secrets.
+                    </div>
+                    <button class="seeMore">PREVIEW &#8599</button>
+                </div>
+                <div class="detail">
+                    
+                    <div class="title">Alien</div>
+                    <div class="des">
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <video id="detailVideo" src="/Assets/Images/Green.mp4"  loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>
+                <div class="poster">
+                    <p class="background4"></p>
+                    <div class="hoverposter4"><img src="/Assets/Images/deadpool.png"></div>
+                    <div class="dead"><img src="/Assets/Images/wolverine.jpg"></div>
+                    <div class="bullet"><img src="/Assets/Images/bullet.png"></div>
+                </div>
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">Deadpool & Wolverine</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        In this anticipated crossover, Deadpool (Ryan Reynolds) and Wolverine (Hugh Jackman) team up for an action-packed, irreverent adventure.<br> Combining Deadpool's trademark humor and Wolverine's iconic claws, the film promises explosive battles, witty banter, and an exciting blend of superhero chaos.
+                    </div>
+                    <button class="seeMore">PREVIEW &#8599</button>
+                </div>
+                <div class="detail">
+                    
+                    <div class="title">Alien</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <video id="detailVideo" src="/Assets/Images/batman.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>
+                <div class="poster">
+                    <p class="background5"></p>
+                    <div class="hoverposter5"><img src="/Assets/Images/batman.png"></div>
+                    <div class="dead2"><img src="/Assets/Images/batbackground.jpg"></div>
+                    <div class="batarang2"><img src="/Assets/Images/batarang.png"></div>
+                    <div class="batarang3"><img src="/Assets/Images/batarang.png"></div>
+                </div>
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">THE BATMAN</div>
+                    <div class="des">
+                        <!-- 20 lorem -->
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, laborum cumque dignissimos quidem atque et eligendi aperiam voluptates beatae maxime.
+                    </div>
+                    <button class="seeMore">PREVIEW &#8599</button>
+                </div>
+                <div class="detail">
+                    
+                    <div class="title">Alien</div>
+                    <div class="des">
+                        <!-- lorem 50 -->
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <video id="detailVideo" src="halloweenends.mp4" loop style="max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);">
+                </video>    
+                <div class="poster">
+                    <div class="hoverposter6"><img src="movie poster/myers.png"></div>
+                    <div class="zillabg"><img src="movie poster/halloween.jpg"></div>
+                </div>
+                <div class="introduce">
+                    <div class="title">Top Movies This Week!</div>
+                    <div class="topic">Halloween</div>
+                    <div class="des">
+                        This biographical drama follows the life of J. Robert Oppenheimer, the brilliant physicist who led the Manhattan Project, which developed the atomic bomb during World War II.<br> The film explores the moral dilemmas, personal struggles, and the profound impact Oppenheimer's creation had on history and his own life.
+                    </div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    
+                    <div class="title">Alien</div>
+                    <div class="des">
+                        Set in the distant future, Alien: Romulus explores the aftermath of the events on LV-426 and the burgeoning corporate interest in alien technology. The story follows a diverse crew aboard the spaceship Romulus, tasked with investigating a derelict spacecraft discovered on the outskirts of a newly colonized planet. As they delve deeper into the ship's mysteries, they uncover remnants of the Xenomorph species, along with evidence of previous expeditions that went horribly wrong.
+                    </div>
+                    <div class="specifications">
+                        <div>
+                            <p>Movie Duration</p>
+                            <p>1hr 59mins</p>
+                        </div>
+                        <div>
+                            <p>Rated</p>
+                            <p>R-18</p>
+                        </div>
+                        <div>
+                            <p>Director</p>
+                            <p>Fede Álvarez</p>
+                        </div>
+                        <div>
+                            <p>Rating</p>
+                            <p>7.3/10</p>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <button>BUY TICKET</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev"><</button>
+            <button id="next">></button>
+            <button id="back">BACK  &#8599</button>
+        </div>
+    </div>
+    
+    <!--_________________________________________________________________________-->
+    <div class="border-top"></div>
+    <!--_________________________________________________________________________-->
+    
+    <div class="search-bar">
+        <input class="slidedown" type="text" id="search" placeholder="Search..." aria-label="Search">
+        <button type="submit">Search</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            const availableTags = [
+                "Halloween",
+                "Alien Romulus",
+                "The Green Knight",
+                "As Above So Below",
+                "Deadpool & Wolverine",
+                "The Batman",
+                "Man of Steel",
+                "Shin Godzilla",
+                "Pacific Rim",
+                "The Joker",
+                "Transformers ONE",
+                "Venom: The Last Dance",
+                "Spider-Man: Into the Spiderverse",
+                "A Quiet Place: Day One",
+                "LOGAN",
+                "Final Destination 5"
+            ];
+
+            $("#search").autocomplete({
+                source: availableTags,
+                minLength: 1
+            });
+
+            // Optional: Handle search button click
+            $("button[type='submit']").click(function() {
+                const query = $("#search").val();
+                alert(`You searched for: ${query}`);
+            });
+        });
+    </script>
+
+    <div class="NowShowing-ComingSoon">
+        <span class="NowShowing" onclick="toggleSections('nowShowing')">Now Showing</span>
+        <span>|</span>
+        <span class="ComingSoon" onclick="toggleSections('comingSoon')">Coming Soon</span>
+    </div> <!--NOW SHOWING|COMING SOON-->
+    
+    <div class="NOW-SHOWING-CONTAINER">
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header manofSteel"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header godzilla"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header pacificrim"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header joker"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header transformers"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header venom"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header spiderman"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header quietplace"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header logan"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header finaldestination"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        
+            
+    </div> <!-- movie-container -->
+    
+    <div class="COMING-SOON-CONTAINER hidden">
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header years"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header neworder"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header agatha"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header kraven"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header doom"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header minecraft"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header f1"></div>
+        </a>
+        </div> <!--MOVIE-CARD-->
+        <div class="movie-card">
+            <a href="">
+            <div class="movie-header supermanmovie"></div>
+        </a>
+        
+    
+    </div> <!-- movie-container -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <Script src="scrollanimation.js"></Script> 
+    </body>
+    </html>
